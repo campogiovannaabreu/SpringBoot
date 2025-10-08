@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Temperatura básica</h1>
+
+    <div class="Temperatura">
+
+    <form id="calcForm">
+       <div class="temperatura">
+        <input type="temperatura" id="num1" name="num1" placeholder="Temperatura" required/>
+        </div>
+       <div class="botao">
+        <select id="inicio" name="inicio" required>
+            <option value="" disabled selected>Selecione operacao</option>
+            <option value="Celsius">Celsius (ºC)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+            <option value="Fahrenheit">Fahrenheit (ºF)</option>
+        </select>
+         </div>
+       <div class="botao">
+        <select id="fim" name="operacao" required>
+            <option value="" disabled selected>Selecione operacao</option>
+            <option value="Celsius1">Celsius (ºC)</option>
+            <option value="Kelvin1">Kelvin (K)</option>
+            <option value="Fahrenheit1">Fahrenheit (ºF)</option>
+        </select>
+        
+        
+        <script src ="script.js"></script>
+        <button type="submit">Calcular</button>
+    </form>
+    <div id="erro"></div>
+    <div id="resultado"></div>
+    </div>
+
+</body>
+</html>
