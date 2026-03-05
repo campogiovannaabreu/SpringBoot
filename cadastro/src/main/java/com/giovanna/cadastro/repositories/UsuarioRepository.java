@@ -9,5 +9,6 @@ import com.giovanna.cadastro.entities.Usuario;
 	public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 	   // Método para buscar usuário pelo email
 	Usuario findByEmail(String email);
+	
 	}
 
